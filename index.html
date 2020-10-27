@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Timothy Gramnaes Lab1 Javascript</title>
+</head>
+<body>
+    <div class="content">
+
+        <!-- Game start -->
+        <div id="intro" class="text">
+        <h1>What just happened?</h1>
+        <p>
+            You wake up with no recollection of who you are sitting on a toilet-seat in a small filthy
+            room with no windows. You are naked, you feel alone, scared and confused.
+        </br>Type start to make sense of all of this.
+        </p>
+        </div>
+
+        <!-- Rise up-->
+
+        <div id="rise" class="text hidden">
+
+            <p>
+                You rise up. The foul stench of old fiecies pierces your nostrils, the dim light from a single light-bulb hanging 
+                in its cable from the roof luminates a big closed door. 
+            </br>would you like to "flush toilet" or "inspect the door"?
+            </p>
+        </div>
+
+        <!--Door-->
+        <div id="toilet-door" class="text hidden">
+            <p>
+                The door is hella locked. aint no way in hell that you will ever get it open. The smell from the toilet feels overwhelming now. Are you sure
+                that you dont want to flush it?
+            </p>
+            </div>
+
+
+        <div>
+            <div class="text-box">
+            <form onsubmit="getAnswer(), clearField()" method="dialog" id="submit-form">
+              <input
+                id="answer"
+                type="text"
+                class="input-field"
+                placeholder=">Type here..."
+                autocomplete="off"
+                
+                
+              />
+            </form>
+            <br>
+              <button id="btn" onclick="getAnswer()">Enter</button>
+              <!-- Error message if input isn't recognized -->
+              <p id="error"></p>
+            </div>
+
+
+
+
+    </div>
+</body>
+</html>

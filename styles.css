@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    background-color: #191919;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+
+}
+
+.content {
+    justify-content: center;
+    align-items: center;
+    width: 45rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.text {
+    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.input-field {
+    align-items: center;
+    justify-content: center;
+}
