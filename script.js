@@ -42,13 +42,7 @@ if (input === "start") {
 
 
 }
-/*
-function runGame() {
-    document.getElementById("intro").classList.toggle("hidden");
-    document.getElementById("rise").classList.toggle("hidden");
-    userInputs.push(input);
-}
-*/
+
 
 
 
@@ -133,3 +127,37 @@ function runAway() {
     document.getElementById("runAway").classList.toggle("hidden");
 
 }
+
+function goLeft2() {
+    document.getElementById("goLeft").classList.toggle("hidden");
+    document.getElementById("ehmThanks").classList.toggle("hidden");
+
+}
+
+function goLeft() {
+    document.getElementById("goLeft").classList.toggle("hidden");
+    document.getElementById("runAway").classList.toggle("hidden");
+
+}
+
+function goRight() {
+    document.getElementById("goRight").classList.toggle("hidden");
+    document.getElementById("runAway").classList.toggle("hidden");
+
+}
+
+function goRight2() {
+    document.getElementById("goRight").classList.toggle("hidden");
+    document.getElementById("ehmThanks").classList.toggle("hidden");
+
+}
+
+function onlyToWell() {
+    document.getElementById("goRight").classList.toggle("hidden");
+    document.getElementById("onlyToWell").classList.toggle("hidden");
+
+}
+
+/**
+ * Character-name submission
+ */

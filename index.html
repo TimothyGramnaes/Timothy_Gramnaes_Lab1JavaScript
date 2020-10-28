@@ -200,8 +200,8 @@
 
 
             <div class="flex">
-                <button class="btn" onclick="goLeft()">Go left</button>
-                <button class="btn" onclick="goRight()">Go right</button>
+                <button class="btn" onclick="goLeft2()">Go left</button>
+                <button class="btn" onclick="goRight2()">Go right</button>
                 </div>
 
         </div>
@@ -234,8 +234,71 @@
 
         <div id="goLeft" class="text hidden">
             <p>
-                
+                You walk down towards the singing. You suddenly start to feel good again,
+                life has purpose. The angelic choir increases in power and you start running.
+            </br>
+            </br>
+            You fall down dead from a heart-attack. Yes that's right you just diedededed
+            But you died happy. So... yay?
             </p>
+
+            <div class="buttons">
+                <button class="btn" onclick="playAgain()">Play again?</button>
+            </div>
+
+        </div>
+
+
+        <div id="goRight" class="text hidden">
+            <p>
+                As you start walking down the sewer the voices suddenly stop.
+                You keep walking but are suddenly interrupted by a trapdoor opening under your feet.
+            </br>
+                You find yourself in one of those "fun" waterslides from before, remember?
+
+
+            </p>
+
+            <div class="flex">
+                <button class="btn" onclick="onlyToWell()">Not this again!</button>
+
+                </div>
+        </div>
+
+
+        <div id="onlyToWell" class="text hidden">
+            <p>
+                You crash down on a soft cushion of live rats.
+            </br>
+            You see someone in front of you hooded in a pinkish brown cape.
+        </br>
+        He stretches you his hand to help you get back up on your feet.
+        </br>
+        Once you stand up the hooded character removes his hood and two kind eyes looks back at you,
+        framed by a bald scalp and salt-and-pepper bearded face.
+        </br>
+        </br>
+        The man starts to speak in a gentle barritone:
+        </br>
+        "It pains me that you had to go through all this in order to meet me. but I had to make sure that you were in fact
+        the chosen one.. So tell me traveller what is your true name? Not your earthly name but your true name?"
+
+
+
+            </p>
+
+            <div class="text-box">
+                <form onsubmit="getName()" method="dialog" id="submit-form">
+                  <input
+                    id="answer"
+                    type="text"
+                    class="input-field"
+                    placeholder=">Type here..."
+                    autocomplete="off"
+                    
+                    
+                  />
+                </form>
         </div>
 
         
