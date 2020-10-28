@@ -18,9 +18,16 @@
         <p>
             You wake up with no recollection of who you are sitting on a toilet-seat in a small filthy
             room with no windows. You are naked, you feel alone, scared and confused.
-        </br>Type start to make sense of all of this.
-        </p>
+      
+        
+    </br>
+    </br>
+        <div class="buttons">
+            <button class="btn" onclick="runGame()">Start game</button>
         </div>
+    </div>
+
+
 
         <!-- Rise up-->
 
@@ -31,88 +38,208 @@
                 in its cable from the roof luminates a big closed door. 
             </br>would you like to "flush toilet" or "inspect the door"?
             </p>
+
+            <div class="buttons">
+                <button class="btn" onclick="flushToilet()">Flush the toilet</button>
+                <button class="btn" onclick="inspectTheDoor()">Inspect the door</button>
+            </div>
         </div>
 
-        <!--Door-->
-        <div id="toilet-door" class="text hidden">
+        <!--The toilet door-->
+
+        <div id="inspectTheDoor" class="text hidden">
             <p>
                 The door is hella locked. aint no way in hell that you will ever get it open. The smell from the toilet feels overwhelming now. Are you sure
                 that you dont want to flush it?
             </p>
-            </div>
 
+            <div class="buttons">
+                <button class="btn" onclick="fineFlushToilet()">Fine! lets flush the toilet</button>
+                <button class="btn" onclick="nahImGood()">Dont tell me what to do!</button>
+            </div>
+            </div>
+        
+        <!--Refuse to flush the toilet-->
+
+        <div id="nahImGood" class="text hidden">
+            <p>
+            You stand there stubborn as nails with you arms crossed until you die of starvation.
+        </br>Jupp, thats right. you diededed and lost the game.
+        </br>
+        But you stood your ground! good on you!
+        </p>
+        <div class="buttons">
+            <button class="btn" onclick="playAgain()">Play again?</button>
+        </div>
+        
+        </div>
+
+        
         <!--Flush toilet-->
 
-        <div id="flush-toilet" class="text hidden">
+        <div id="flushToilet" class="text hidden">
             <p>
                 You flush the toilet. As the the water start twirling blending fecal matter with
-                dirty toilet water the hypnotizing spiral seam to suck all light in to it. In fact it starts to
-                drain your energy as well.. The sound of rumbling water intesifies as your 
+                dirty toilet water. </br> 
+                The hypnotizing spiral seam to suck all light in to it. In fact it starts to
+                drain your energy as well.. The sound of rumbling water intesifies as your body
                 starts to get sucked down the filthy toilet.
             </br>
             </br>
                 
-                
-                <button class="btn" id="damn" onClick="damn()">Damn!</button>
-                
+                <div class="buttons">
+                <button class="btn" onClick="damn()">Damn!</button>
+                </div>
             </p>
 
 
         </div>
 
-        <!--Flush toilet-->
+        <!--Meeting the Crocodile-->
 
                <div id="monster" class="text hidden">
                 <p>
                     Remember thinking "Things can't possibly get any worse?"
+                </br>
                     What a foolish line of thought, huh?
                 </br>
-                After beeing flushed you slid down a almost vertical pipe and where tossed down a murky
-                sewer. As you rise to your feet you se a giant Crocodile standing on two legs wearing a tiara munching away
-                on a floppy taco and steadily keeps eye contact with you.
                 </br>
-                Do you "run away" or "say hi"?
+                You find yourself sliding down a pipe filled with well.. you know what it's filled with.
+                </br>
+                After this hellish joyride you get tossed down a murky
+                sewer. </br> As you rise to your feet you se a giant Crocodile standing on two legs wearing a tiara munching away
+                on a floppy taco while steadily keeping eye contact with you.
+                </br>
+               
 
                     
                 </p>
+                <div class="buttons">
+                    <button class="btn" onclick="runAway()">Run Away!</button>
+                    <button class="btn" onclick="sayHi()">Say Hi</button>
+                </div>
     
     
             </div>
 
 
-               <!--Monster-->
+               <!--Talking to the Crocodile-->
 
-               <div id="Say-hi" class="text hidden">
+               <div id="sayHi" class="text hidden">
                 <p>
-                    The Crocodile answers in a supprisingly high-pitched voice:
+                    The Crocodile starts yelling in a supprisingly cute and high-pitched voice:
+                </br>
                 </br>
                     "Greeting traveller! would you like to purchase some potions?"
+                    </p>
 
             </br>
             </br>
                     <div class="flex">
-                    <button class="btn" id="potion-yes">Yeah sure!</button>
-                    <button class="btn" id="potion-no">Naah.. im good</button>
+                    <button class="btn" onclick="potionYes()">Yeah sure!</button>
+                    <button class="btn" onclick="potionNo()">Naah.. im good</button>
                     </div>
                     
-                </p>
+                
     
     
             </div>
 
-           <!--Flush toilet-->
+            <!--Agreeing to purchase potions from the Crocodile-->
 
-           <div id="run-away" class="text hidden">
+            <div id="potionYes" class="text hidden">
+                <p>
+                    The Crocodile starts dancing and hands you over a can of Pommac.
+                </br>
+                    He smiles at you in anticipation.
+                </p>
+
+            </br>
+            </br>
+
+                <div class="flex">
+                    <button class="btn" onclick="ehmThanks()">Ehm... thanks?</button>
+                    <button class="btn" onclick="thisIsNotApotion()">This is not a potion!</button>
+                    </div>
+
+
+            </div>
+
+           <!--Dont buy potions from the crocodile-->
+
+        <div id="potionNo" class="text hidden">
             <p>
+           The crocodile throws his floppy taco at the ground and starts crying like toddler.
+            </br>
+            He pounces at you and swallows you whole in one big gulp.
 
+        </br>
+        </br>
+        Yepp.. you diededed
+
+        <div class="buttons">
+            <button class="btn" onclick="playAgain()">Play again?</button>
+        </div>
+        </div>
+
+
+        <!--Thank the crocodile-->
+
+        <div id="ehmThanks" class="text hidden">
+            <p>
+            The Crocodile with a capital C dances away whilst playing the themesong for the swedish soapopera "rädderiet" on trumpet.
+            </br>
+            </br>
+            You start walking down the sewer until you find yourself at a crossroad.
+            </br>
+            From the tunnel to your left you hear a soothing choir singing lullabys.
+        </br>
+            From the tunnel to your right you hear people muttering in a deep voice.
+            You cant quite make out what they are saying.
+            </p>
+
+
+            <div class="flex">
+                <button class="btn" onclick="goLeft()">Go left</button>
+                <button class="btn" onclick="goRight()">Go right</button>
+                </div>
+
+        </div>
+
+
+        
+
+           <!--Run away from the Crocodile-->
+
+           <div id="runAway" class="text hidden">
+            <p>
+                You run as fast as you can away from the odd looking crocodile. 
+                You reach a crossroad in the sewer. 
+            </br>
+            From the tunnel to your left you hear a soothing choir singing lullabys.
+        </br>
+            From the tunnel to your right you hear people muttering in a deep voice.
+            You cant quite make out what they are saying.
                 
             </p>
+
+            <div class="flex">
+                <button class="btn" onclick="goLeft()">Go left</button>
+                <button class="btn" onclick="goRight()">Go right</button>
+                </div>
 
 
         </div>
 
-        
 
+        <div id="goLeft" class="text hidden">
+            <p>
+                
+            </p>
+        </div>
+
+        
+<!--
 
         <div>
             <div class="text-box">
@@ -129,18 +256,14 @@
             </form>
             <br>
               <button id="btn" onclick="getAnswer()">Enter</button>
-              <!-- Error message if input isn't recognized -->
+             
               <p id="error"></p>
             </div>
-
+        -->
 
 
 
     </div>
 
-
-    <div class="text">
-        <button id="startGameButon" onclick="runGame()">Start game</button>
-    </div>
 </body>
 </html>
