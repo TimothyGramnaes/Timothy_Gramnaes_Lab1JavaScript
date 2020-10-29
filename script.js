@@ -1,47 +1,4 @@
 
-/** 
- * Array for inputs. text-based
-*/
-let userInputs = [];
-
-/**
- * Clears the textbar after submission
- */
-function clearField() {
-    document.getElementById("answer").value = "";
-}
-/**
- * reads the input from the player and displays where the player is
- */
-function getAnswer() {
-/*
-var input = document.getElementById("answer").value;
-
-if (input === "start") {
-    document.getElementById("intro").classList.toggle("hidden");
-    document.getElementById("rise").classList.toggle("hidden");
-    userInputs.push(input);
-
-} else if (input == "inspect the door" && userInputs.includes("start")) {
-    document.getElementById("rise").classList.toggle("hidden");
-    document.getElementById("toilet-door").classList.toggle("hidden");
-    userInputs.push(input);
-
-} 
- else if (input == "flush toilet" && userInputs.includes("start")) {
-    if (userInputs.includes("inspect the door")) {
-        document.getElementById("toilet-door").classList.toggle("hidden");
-    }
-
-    document.getElementById("flush-toilet").classList.toggle("hidden");
-    document.getElementById("rise").classList.toggle("hidden");
-    userInputs.push(input);
-
-} 
-*/
-
-
-}
 
 
 
@@ -143,7 +100,7 @@ function goRight2() {
     document.getElementById("ehmThanks").classList.toggle("hidden");
 
 }
-
+/**You fall down a pipe after going right in the crossroad */
 function onlyToWell() {
     document.getElementById("goRight").classList.toggle("hidden");
     document.getElementById("onlyToWell").classList.toggle("hidden");
@@ -179,16 +136,15 @@ function getName1() {
 */
 
 
-    function getName2() {
-        let name = document.getElementById("name2").value;
-        let span = document.getElementById('nameSecond');
-        span.innerText = name;
+function getName2() {
+    let name = document.getElementById("name2").value;
+    let span = document.getElementById('nameSecond');
+    span.innerText = name;
     
-        document.getElementById("wrongName").classList.toggle("hidden");
-        document.getElementById("wrongAgain").classList.toggle("hidden");
+    document.getElementById("wrongName").classList.toggle("hidden");
+    document.getElementById("wrongAgain").classList.toggle("hidden");
     
     
-        }
+    }
     
 
-//var input = document.getElementById("answer").value;
