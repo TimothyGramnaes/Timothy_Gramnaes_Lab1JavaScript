@@ -157,7 +157,42 @@ function onlyToWell() {
     document.getElementById("onlyToWell").classList.toggle("hidden");
 
 }
+/**
+ * Restarts the game
+ */
+function playAgain() {
+    location.reload();
+}
 
 /**
- * Character-name submission
+ * Character name
  */
+
+ /**
+  * The Hooded stranger asks you for your name
+  */
+
+function getName1() {
+    let name1 = document.getElementById("name1").value;
+    console.log(name1)
+    //names.push(input);
+
+    document.getElementById("wrongName").classList.toggle("hidden");
+    document.getElementById("onlyToWell").classList.toggle("hidden");
+
+
+    }
+
+    function getName2() {
+        let name2 = document.getElementById("name1").value;
+        console.log(name2)
+        //names.push(input);
+    
+        document.getElementById("wrongName").classList.toggle("hidden");
+        document.getElementById("wrongAgain").classList.toggle("hidden");
+    
+    
+        }
+    
+
+//var input = document.getElementById("answer").value;

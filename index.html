@@ -288,9 +288,9 @@
             </p>
 
             <div class="text-box">
-                <form onsubmit="getName()" method="dialog" id="submit-form">
+                <form onsubmit="getName1()" method="dialog" id="submitForm">
                   <input
-                    id="answer"
+                    id="name1"
                     type="text"
                     class="input-field"
                     placeholder=">Type here..."
@@ -298,7 +298,54 @@
                     
                     
                   />
+                  <input class="btn" value="submit" type="submit" onsubmit="getName()">
                 </form>
+            </div>
+        </div>
+
+        <div id="wrongName" class="text hidden">
+            <p>
+                Are you sure your real name is Nooby McNoobface?
+            </br>
+                Could you please try again with a better name
+            </br>
+
+            </p>
+            <div class="text-box">
+                <form onsubmit="getName2()" method="dialog" id="submitForm">
+                  <input
+                    id="name2"
+                    type="text"
+                    class="input-field"
+                    placeholder=">Type here..."
+                    autocomplete="off"
+                    
+                    
+                  />
+                  <input class="btn" value="submit" type="submit" onsubmit="getName()">
+                </form>
+            </div>
+        </div>
+
+        <div id="wrongAgain" class="text hidden">
+            <p>
+                Im sorry... I wasnt looking for a Nooby McNoobface.
+            </br>
+            Sorry for wasting your time
+            I was looking for a name1 or name2.
+            </br>
+            But now you know to much.. so I cant just let you leave.
+             </br>
+             </br>
+             The old man pulls a rusty dagger and shoves it in your heart.
+             Yepp.. you diededed, but you sure came close!
+            </br> 
+            Try writing the right name the next time.
+
+            </p>
+            <div class="buttons">
+                <button class="btn" onclick="playAgain()">Play again?</button>
+            </div>
         </div>
 
         
