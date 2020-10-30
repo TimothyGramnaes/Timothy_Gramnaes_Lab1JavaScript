@@ -129,8 +129,8 @@ function getName1() {
     }
 /**
 * The gooded stranger asks for your name again
-* If you type in the "right name" meaning it ends with "!!!" you toggle the win-screen
-* else If you dont yell your name at the old man he just kills you
+* @If you type in the "right name" meaning it ends with "!!!" you toggle the win-screen
+* @else If you dont yell your name at the old man he just kills you
 */
 
 function getName2() {
@@ -138,8 +138,8 @@ function getName2() {
     let span = document.getElementById('nameSecond');
     span.innerText = name;
 
-// Name ending with "!!!" toggles win-screen
-      if (name.includes("!!!")) {
+// Name ending with "!" toggles win-screen
+      if (name.includes("!")) {
         document.getElementById("wrongName").classList.toggle("hidden"); 
         document.getElementById("youWon").classList.toggle("hidden"); 
     }
