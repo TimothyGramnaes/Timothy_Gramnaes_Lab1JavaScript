@@ -13,6 +13,7 @@
     <div class="content">
 
         <!-- Game start -->
+
         <div id="intro" class="text">
         <h1>What just happened?</h1>
         <p>
@@ -34,9 +35,8 @@
         <div id="rise" class="text hidden">
 
             <p>
-                You rise up. The foul stench of old fiecies pierces your nostrils, the dim light from a single light-bulb hanging 
-                in its cable from the roof luminates a big closed door. 
-            </br>would you like to "flush toilet" or "inspect the door"?
+                You rise up. The foul stench of old feces pierces your nostrils, the dim light from a single light-bulb hanging 
+                in its cable from the roof luminates a big closed door.            
             </p>
 
             <div class="buttons">
@@ -49,7 +49,7 @@
 
         <div id="inspectTheDoor" class="text hidden">
             <p>
-                The door is hella locked. aint no way in hell that you will ever get it open. The smell from the toilet feels overwhelming now. Are you sure
+                The door is hella locked. Aint no way in hell that you will ever get it open. The smell from the toilet feels overwhelming now. Are you sure
                 that you dont want to flush it?
             </p>
 
@@ -66,7 +66,7 @@
             You stand there stubborn as nails with you arms crossed until you die of starvation.
         </br>Jupp, thats right. you diededed and lost the game.
         </br>
-        But you stood your ground! good on you!
+        But you stood your ground, good on you!
         </p>
         <div class="buttons">
             <button class="btn" onclick="playAgain()">Play again?</button>
@@ -107,7 +107,7 @@
                 You find yourself sliding down a pipe filled with well.. you know what it's filled with.
                 </br>
                 After this hellish joyride you get tossed down a murky
-                sewer. </br> As you rise to your feet you se a giant Crocodile standing on two legs wearing a tiara munching away
+                sewer. </br> As you rise to your feet you se a giant Crocodile standing on its hind legs, wearing a tiara, munching away
                 on a floppy taco while steadily keeping eye contact with you.
                 </br>
                
@@ -127,10 +127,10 @@
 
                <div id="sayHi" class="text hidden">
                 <p>
-                    The Crocodile starts yelling in a supprisingly cute and high-pitched voice:
+                    The Crocodile starts talking loudly in a supprisingly cute and high-pitched voice:
                 </br>
                 </br>
-                    "Greeting traveller! would you like to purchase some potions?"
+                    "Greetings traveller! would you like to purchase some potions?"
                     </p>
 
             </br>
@@ -149,7 +149,7 @@
 
             <div id="potionYes" class="text hidden">
                 <p>
-                    The Crocodile starts dancing and hands you over a can of Pommac.
+                    The Crocodile starts dancing and hands you a can of Pommac.
                 </br>
                     He smiles at you in anticipation.
                 </p>
@@ -167,15 +167,15 @@
 
            <!--Dont buy potions from the crocodile-->
 
-        <div id="potionNo" class="text hidden">
-            <p>
-           The crocodile throws his floppy taco at the ground and starts crying like toddler.
-            </br>
-            He pounces at you and swallows you whole in one big gulp.
+            <div id="potionNo" class="text hidden">
+                <p>
+                The crocodile throws his floppy taco at the ground and starts crying like toddler.
+                </br>
+                He pounces at you and swallows you whole in one big gulp.
 
-        </br>
-        </br>
-        Yepp.. you diededed
+                </br>
+                </br>
+                Yepp.. you diededed
 
         <div class="buttons">
             <button class="btn" onclick="playAgain()">Play again?</button>
@@ -231,6 +231,7 @@
 
         </div>
 
+        <!--Go left at the crossroads-->
 
         <div id="goLeft" class="text hidden">
             <p>
@@ -249,6 +250,8 @@
         </div>
 
 
+        <!--Go right at the crossroads-->
+
         <div id="goRight" class="text hidden">
             <p>
                 As you start walking down the sewer the voices suddenly stop.
@@ -266,19 +269,21 @@
         </div>
 
 
+        <!--Trap door, meeting the old man-->
+
         <div id="onlyToWell" class="text hidden">
             <p>
                 You crash down on a soft cushion of live rats.
             </br>
             You see someone in front of you hooded in a pinkish brown cape.
         </br>
-        He stretches you his hand to help you get back up on your feet.
+        The stranger stretches you his hand and helps you get back on your feet.
         </br>
-        Once you stand up the hooded character removes his hood and two kind eyes looks back at you,
-        framed by a bald scalp and salt-and-pepper bearded face.
+        Once you stand up the hooded character removes his hood. Two kind eyes framed by
+        a bald scalp and a salt-and-pepper bearded face looks back at you.
         </br>
         </br>
-        The man starts to speak in a gentle barritone:
+        The man starts to speak in a gentle deep barritone:
         </br>
         "It pains me that you had to go through all this in order to meet me. but I had to make sure that you were in fact
         the chosen one.. So tell me traveller what is your true name? Not your earthly name but your true name?"
@@ -303,11 +308,14 @@
             </div>
         </div>
 
+        <!--After stating your name the first time to the old man-->
+
         <div id="wrongName" class="text hidden">
             <p>
                 Are you sure your real name is Nooby McNoobface?
             </br>
-                Could you please try again with a better name
+            I have old ears... </br>
+                Could you please try again, a bit louder and with a better name.
             </br>
 
             </p>
@@ -327,12 +335,13 @@
             </div>
         </div>
 
+        <!--After stating your name a second time to the old man-->
+
         <div id="wrongAgain" class="text hidden">
             <p>
-                Im sorry... I wasnt looking for a Nooby McNoobface.
+                Im sorry... Im not looking for a Nooby McNoobface.
             </br>
-            Sorry for wasting your time
-            but I was looking for a <span id="nameFirst"></span> or <span id="nameSecond"></span>.
+            I was looking for a <span id="nameFirst"></span> or <span id="nameSecond"></span>.
             </br>
             But now you know to much.. so I cant just let you leave.
              </br>
@@ -348,7 +357,14 @@
             </div>
         </div>
 
-        
+    <div id="youWon" class="text hidden">
+        <p>
+            Holy shit! it's really you!
+        </br>
+        </br>
+        To get your proper Congratulations please swish 100SEK to 0737140558
+        </p>
+    </div>
 
 
     </div>

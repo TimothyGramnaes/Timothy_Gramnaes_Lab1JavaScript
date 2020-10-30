@@ -107,8 +107,7 @@ function onlyToWell() {
 
 }
 /**
- * Restarts the game (Play again button)
- */
+ * Restarts the game (Play again button) */
 function playAgain() {
     location.reload();
 }
@@ -122,10 +121,7 @@ function getName1() {
     let name = document.getElementById("name1").value;
     let span = document.getElementById('nameFirst');
     span.innerText = name;
-    
-    console.log(name)
-    //names.push(input);
-
+ 
     document.getElementById("wrongName").classList.toggle("hidden");
     document.getElementById("onlyToWell").classList.toggle("hidden");
 
@@ -135,16 +131,25 @@ function getName1() {
 * The gooded stranger asks for your name again
 */
 
-
 function getName2() {
     let name = document.getElementById("name2").value;
     let span = document.getElementById('nameSecond');
     span.innerText = name;
+
+
+  //  if (document.getElementById('name2').value.indexOf("!!!") > -1) {
+      if (name.includes("!!!")) {
+        document.getElementById("wrongName").classList.toggle("hidden"); 
+        document.getElementById("youWon").classList.toggle("hidden"); 
+    }
+
     
+    // ((document.getElementById('name2').value.indexOf("") > -1))
+    else {
     document.getElementById("wrongName").classList.toggle("hidden");
     document.getElementById("wrongAgain").classList.toggle("hidden");
     
     
     }
     
-
+}
